@@ -27,6 +27,6 @@ app.use("/api/events", require("./routers/events"));
 
 //escuchar peticiones
 
-app.listen(4000, () =>
+app.listen(process.env.PORT, () =>
   console.log(`Express server running on http://locahost:${process.env.PORT}`)
 );
